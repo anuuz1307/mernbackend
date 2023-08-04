@@ -1,8 +1,8 @@
 import File from '../models/file.js';
 //import bcrypt from 'bcrypt';
-//import dotenv from 'dotenv';
-
-///dotenv.config();
+import dotenv from 'dotenv';
+const BASE_URL = process.env.BASE_URL 
+dotenv.config();
 
 export const uploadImage = async (request, response) => {
     const fileObj = {
